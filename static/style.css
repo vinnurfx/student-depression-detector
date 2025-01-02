@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 28px 5%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: pink;
+    text-shadow: 0 0 20px pink,
+                 0 0 40px pink;
+    transform: scale(1.1);   
+}
+
+span {
+    color: pink;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin: 0 20px;
+    transition: 0.3s ease;  
+}
+
+.navbar a:hover {
+    color: pink;
+    font-size: 23px;
+    transform: scale(1.1);   
+}
+
+.test {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.test:hover {
+    background-color: pink;
+    box-shadow: 0 0 20px pink;
+    color: white;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 50px;
+}
+
+.home-content h1 {
+    font-size: 100px;
+    line-height: 1.2;
+}
+
+.home-content h4 {
+    font-style: italic;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 25px;
+    margin: 25px 0 30px;
+}
+
+.button-home {
+    width: 345px;
+    display: flex;
+    gap: 1.5em;
+}
+
+.btnhome2 {
+    padding: 15px 50px;
+    background-color: white;
+    color: pink;
+    border: 4px solid pink;
+    border-radius: 100px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 650;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btnhome2:hover {
+    background-color: pink;
+    color: white;
+    box-shadow: 0 0 15px pink;
+}
+
+.img-box img {
+    width: 150%;
+    margin-left: -100px;
+    margin-top: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: pink;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    width: 50px;
+}
+
+.about {
+    width: 100%;
+    min-height: 55vh;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.about-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 175px;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.aboutbox {
+    width: 50%;
+    align-content: center;
+    background-color: white;
+    height: 350px;
+    border-radius: 3rem;
+    border: 5px solid pink;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.aboutbox:hover {
+    background-color: pink;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 0 20px pink;
+}
+
+.aboutbox .aboutinfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+.aboutinfo h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: -60px;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.aboutinfo p {
+    font-size: 20px;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+    text-align: justify;
+    justify-content: left;
+}
+
+.form {
+    background-color: whitesmoke;
+    height: 2000px;
+}
+.form h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.form-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 90%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0 15px;    
+    background-color: rgb(255, 121, 143);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgb(255, 85, 107);box-shadow: 0 0 10px rgb(255, 70, 101);
+    background-color: rgb(255, 70, 101);
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.team {
+    background-color: white;
+    height: 825px;
+}
+
+.teamtitle h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.teamrow {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 100px;
+}
+
+.teamcolumn {
+    width: 30%;
+}
+
+.teamcard {
+    padding: 3.5em 1em;
+    border-radius: 3rem;
+    align-content: center;
+    border: 5px solid pink;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.teamcard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px pink;  
+}
+
+.teamcard img-container {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.teamcard img {
+    width: 50%;
+    border-radius: 50%;
+    border: 7px solid pink;
+}
+
+
+.teamcard h4 {
+    padding-top: 25px;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.teamcard p {
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 7px;
+    padding-bottom: 25px;
+    letter-spacing: 3px;
+}
+
+.groupicons {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 1.5rem;
+    font-size:25px;
+}
+
+.iconswhatsapp {
+    color: black;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.iconswhatsapp:hover {  
+    transform: scale(1.2);
+    color: lime;
+}
+
+.iconsinstagram {
+    color: black;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.iconsinstagram:hover {  
+    transform: scale(1.2);
+    color: red;
+}
+
+.iconslinkedin {
+    color: black;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.iconslinkedin:hover {  
+    transform: scale(1.2);
+    color: blue;
+}
+
+.teamcard a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.footerbottom {
+    background-color: pink;
+    opacity: 75%;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p {
+    font-weight: 600;
+    color: black;
+}
+
+.designer {
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+    color: rgb(82, 0, 82);
+    font-weight: 750;
+    letter-spacing: 1.5px;
+}
+#gender {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#age {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#academic_pressure {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#study_satisfaction {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#sleep_duration {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#dietary_habits {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#suicidal_thoughts {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#study_hours {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#financial_stress {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+#family_history {
+    margin-top: 8px;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    color: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 15px;    
+}
+
+label {
+    font-size: 25px;
+    height: 10px;
+}
+
+.output {
+    max-width: 90%;
+    margin: auto;
+    background: #fff;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.output p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(189, 67, 87);
+    padding-bottom: 50px;
+}

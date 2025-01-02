@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="static/logowebsite.jpg" />
+    <title>SereniTrack</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="static/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo"><span>Sereni</span>Track</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#team">Our Team</a>
+        </nav>
+        
+        <a href="#form" class="test">Try Now!</a>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Welcome to</h3>
+            <h1><span>Sereni</span>Track</h1>
+            <br>
+            <h4>Are you feel <span class="input"></span></h4>
+            <p>
+                Don't worry, My Friend! I'm here for you, let's check your condition first, Okay?
+            </p>
+
+            <div class="button-home">
+                <a href="#form" class="btnhome2">Check Now!</a>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img src="static/image2.gif" alt="">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript">
+        var Typed = new Typed(".input ", {
+            strings: ["anxious?", "tired?", "loss?", "down?", "confused?"], typeSpeed: 75, backSpeed: 50, loop: true
+        });
+    </script>
+    </div>
+
+    <section class="about" id="about">
+
+        <h2 class="titleabout">
+            What is <span>Sereni</span>Track?
+        </h2>
+
+        <div class="about-container">
+            <div class="aboutbox">
+                <div class="aboutinfo">
+                    <h4>
+                        What is it?
+                    </h4>
+                    <p>
+                        Serenitrack is a website that can help students detect depression simply and accurately.
+                    </p>
+                </div>
+            </div>
+
+            <div class="aboutbox">
+                <div class="aboutinfo">
+                    <h4>
+                        Why SereniTrack?
+                    </h4>
+                    <p>
+                        Serenitrack helps increase self-awareness and provides a first step in maintaining students'
+                        mental health.
+                    </p>
+                </div>
+            </div>
+
+            <div class="aboutbox">
+                <div class="aboutinfo">
+                    <h4>
+                        How does it work?
+                    </h4>
+                    <p>
+                        It is processes personal data from users to provide depression predictions based on stored
+                        datasets.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form" id="form">
+        <h2 class="titleform">
+            Check Your Condition with <span>Sereni</span>Track
+        </h2>
+
+        <div class="form-container">
+            <form action="/predict" method="post" autocomplete="off">
+                <!-- Gender -->
+                <label for="gender">Gender</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br><br>
+
+                <!-- Age -->
+                <label for="age" min="1" max="100">Age</label><br>
+                <select id="age" name="age" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                </select><br><br>
+
+                <!-- Academic Pressure -->
+                <label for="academic_pressure">Academic Pressure</label><br>
+                <select id="academic_pressure" name="academic_pressure" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="1">Overwhelmed</option>
+                    <option value="2">Stresed</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Midly Stressed</option>
+                    <option value="5">Relaxed</option>
+                </select><br><br>
+
+
+                <!-- Study Satisfaction -->
+                <label for="study_satisfaction">Study Satisfaction</label><br>
+                <select id="study_satisfaction" name="study_satisfaction" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="1">Very Uncomfortable</option>
+                    <option value="2">Uncomfortable</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Comfortable</option>
+                    <option value="5">Very Comfortable</option>
+                </select><br><br>
+
+                <!-- Sleep Duration -->
+                <label for="sleep_duration">Sleep Duration</label><br>
+                <select id="sleep_duration" name="sleep_duration" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="Less than 5 hours">Less than 5 hours</option>
+                    <option value="5 - 6 hours">5 - 6 hours</option>
+                    <option value="6 - 7 hours">6 - 7 hours</option>
+                    <option value="7 - 8 hours">7 - 8 hours</option>
+                    <option value="More than 8 hours">More than 8 hours</option>
+                </select><br><br>
+
+                <!-- Dietary Habits -->
+                <label for="dietary_habits">Dietary Habits</label><br>
+                <select id="dietary_habits" name="dietary_habits" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="Unhealthy">Unhealthy</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Healthy">Healthy</option>
+                </select><br><br>
+
+                <!-- Suicidal Thoughts -->
+                <label for="suicidal_thoughts">Have you ever had suicidal thoughts?</label><br>
+                <select id="suicidal_thoughts" name="suicidal_thoughts" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select><br><br>
+
+                <!-- Study Hours -->
+                <label for="study_hours" min="1" max="24">Study Hours</label><br>
+                <select id="study_hours" name="study_hours" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="1">1 hour</option>
+                    <option value="2">2 hours</option>
+                    <option value="3">3 hours</option>
+                    <option value="4">4 hours</option>
+                    <option value="5">5 hours</option>
+                    <option value="6">6 hours</option>
+                    <option value="7">7 hours</option>
+                    <option value="8">8 hours</option>
+                </select><br><br>
+
+                <!-- Financial Stress -->
+                <label for="financial_stress" min="1" max="5">Financial Stress</label><br>
+                <select id="financial_stress" name="financial_stress" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="1">Very Low</option>
+                    <option value="2">Low</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">High</option>
+                    <option value="5">Very High</option>
+                </select><br><br>
+
+                <!-- Family History of Mental Illness -->
+                <label for="family_history">Family History of Mental Illness</label><br>
+                <select id="family_history" name="family_history" required>
+                    <option value="" disabled selected>Select Option ...</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select><br><br>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitbutton">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="teamtitle">
+            <h3>
+                Our Team
+            </h3>
+        </div>
+        <div class="teamrow">
+            <!-- Member 1 -->
+            <div class="teamcolumn">
+                <div class="teamcard">
+                    <div class="img-container">
+                        <img src="static/foto1.png">
+                    </div>
+                    <h4>
+                        Josephin Nova Bagaskara
+                    </h4>
+                    <p>
+                        2304130002
+                    </p>
+                    <div class="groupicons">
+                        <div class="iconswhatsapp">
+                            <a href="https://wa.me/6282247917650">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="iconsinstagram">
+                            <a href="https://www.instagram.com/ufftz4s/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="iconslinkedin">
+                            <a href="https://www.linkedin.com/in/josephin-nova-bagaskara-3200a0340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+            <!-- Member 2 -->
+            <div class="teamcolumn">
+                <div class="teamcard">
+                    <div class="img-container">
+                        <img src="static/foto2.png">
+                    </div>
+                    <h4>
+                        Luthfa Qubailatun Najwah
+                    </h4>
+                    <p>
+                        2304130015
+                    </p>
+                    <div class="groupicons">
+                        <div class="iconswhatsapp">
+                            <a href="https://wa.me/6285945973199">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="iconsinstagram">
+                            <a href="https://www.instagram.com/llxxhfaa/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="iconslinkedin">
+                            <a href="https://www.linkedin.com/in/luthfa-najwah/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+            <!-- Member 3 -->
+            <div class="teamcolumn">
+                <div class="teamcard">
+                    <div class="img-container">
+                        <img src="static/foto3.png">
+                    </div>
+                    <h4>
+                        Nur Khevin
+                    </h4>
+                    <p>
+                        2304130032
+                    </p>
+                    <div class="groupicons">
+                        <div class="iconswhatsapp">
+                            <a href="https://wa.me/6281228824127">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="iconsinstagram">
+                            <a href="https://www.instagram.com/vinnurfx.js/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="iconslinkedin">
+                            <a href="https://www.linkedin.com/in/nurkhevin/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footercontainer">
+            <div class="footerbottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Teknik Informatika 2023 Rombel 1 Kelompok
+                        7</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
